@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <header class="d-flex justify-content-between" id="header">
+            <div class="links">
+                <a href="#">FAQs</a>
+                <a href="#">Help</a>
+                <a href="#">Support</a>
+            </div>
+
+            <div class="social white top">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+        </header>
+
+        <!-- ==== nav ==== -->
+        <nav class="width margin">
+            <div class="logo">
+                <h2><span class="blue">DRY</span><span class="l-blue">ME</span></h2>
+            </div>
+
+            <div class="navigation">
+                <ul class="d-flex" id="ul">
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li class="drop-btn"><a href="#">Pages<i class="bi bi-caret-down-fill"></i></a>
+                        <ul class="drop-content">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+
+
+        <!-- ==== carousel ==== -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="overlay"></div>
+                <div class="carousel-item active">
+                    <img src="./img/carousel-1.jpg" class="d-block w-100" alt="...">
+
+                    <div class="carou-text">
+                        <h5 class="white">Laundry & Dry Cleaning</h5>
+
+                        <h1 class="white">Highly Professional Staff</h1>
+
+                        <button class="top-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carousel-2.jpg" class="d-block w-100" alt="...">
+
+                    <div class="carou-text">
+                        <h5 class="white">Laundry & Dry Cleaning</h5>
+
+                        <h1 class="white">Highly Professional Staff</h1>
+
+                        <button class="top-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="bot white">
+                    <div class="detail">
+                        <div class="icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+
+                        <div class="details">
+                            <h6>Our Loaction</h6>
+                            <p>this street, ny</p>
+                        </div>
+
+                    </div>
+
+                    <div class="detail">
+                        <div class="icon">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+
+                        <div class="details">
+                            <h6>Email Us</h6>
+                            <p>this@gmail.com</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="detail">
+                        <div class="icon">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+
+                        <div class="details">
+                            <h6>Call Us</h6>
+                            <p>+12 83926401023</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev l-btn" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next r-btn" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- === about us === -->
+
+        <div class="about-us d-flex width" id="about">
+            <div class="image">
+                <img src="./img/about.jpg" alt="">
+            </div>
+
+            <div class="about">
+                <p class="l-blue bold">Learn About Us</p>
+
+                <h3 class="h3 blue">We Are Quality Laundry Provider In Your City</h3>
+
+                <p class="blue bold"><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum earum quibusdam
+                        soluta
+                        quis tempora.
+                        Sunt laboriosam cumque impedit quasi. Unde ad deleniti accusantium aut, odio cum reprehenderit
+                        consectetur ex architecto!</em></p>
+
+                <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum dolorum dignissimos
+                    beatae rem
+                    nam consequuntur eveniet, possimus eaque non modi necessitatibus maiores odio ut officia? Dolores
+                    eos quod et!</p>
+
+                <div class="grid-2">
+                    <div class="l-blue bold">Quality Laundry service</div>
+                    <div class="l-blue bold">Express Fast Delivery</div>
+                    <div class="l-blue bold">Highly Professional Staff</div>
+                    <div class="l-blue bold">100% Satisfaction Guarentee</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- === Services === -->
+
+        <div class="our-services width center" id="services">
+            <p class="l-blue">Our Services</p>
+            <h3 class="blue center h3">What We Offer</h3>
+
+            <div class="grid-4">
+                <div class="service">
+                    <div class="icon">
+                        <i class="bi bi-archive-fill"></i>
+                    </div>
+                    <h5 class="blue">Dry Cleaning</h5>
+                </div>
+
+                <div class="service">
+                    <div class="icon">
+                        <i class="bi bi-archive-fill"></i>
+                    </div>
+                    <h5 class="blue">Wash & Laundry</h5>
+                </div>
+
+                <div class="service">
+                    <div class="icon">
+                        <i class="bi bi-archive-fill"></i>
+                    </div>
+                    <h5 class="blue">Curtain Laundry</h5>
+                </div>
+
+                <div class="service">
+                    <div class="icon">
+                        <i class="bi bi-archive-fill"></i>
+                    </div>
+                    <h5 class="blue">Suits Cleaning</h5>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- === features === -->
+
+        <section class="features width d-flex">
+            <div class="text">
+                <p class="l-blue bold">Our Feature</p>
+                <h3 class=" blue h3">Why Choose Us</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, obcaecati non? Molestias officia
+                    dolores
+                    libero eos quas adipisci culpa iste natus dolorum, accusantium cum ea atque labore, hic, quam
+                    incidunt.
+                </p>
+
+                <div class=" grid-2">
+                    <div class="feature">
+                        <h3 class="h3 l-blue">10</h3>
+                        <h5>Years Experience</h5>
+                    </div>
+
+                    <div class="feature">
+                        <h3 class="h3 l-blue">250</h3>
+                        <h5>Expert Worker</h5>
+                    </div>
+
+                    <div class="feature">
+                        <h3 class="h3 l-blue">1250</h3>
+                        <h5>Happy Clients</h5>
+                    </div>
+
+                    <div class="feature">
+                        <h3 class="h3 l-blue">9550</h3>
+                        <h5>Dry Cleaning</h5>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="image center white">
+                <i class="bi bi-star-fill"></i>
+                <p class="big">10+</p>
+                <h4>Years Experience</h4>
+            </div>
+        </section>
+
+
+
+
+        <!-- === process === -->
+        <section class="process-container width">
+            <p class="l-blue bold center">
+                Working process
+            </p>
+
+            <h3 class="blue center h3">How We Work</h3>
+
+            <div class="grid-4 processs">
+                <div class="process">
+                    <p class="big l-blue center">1</p>
+                    <h4 class="bold blue center">Order Place</h4>
+                </div>
+
+                <div class="process">
+                    <p class="big l-blue center">2</p>
+                    <h4 class="bold blue center">Free Pick Up</h4>
+                </div>
+
+                <div class="process">
+                    <p class="big l-blue center">3</p>
+                    <h4 class="bold blue center">Dry Cleaning</h4>
+                </div>
+
+                <div class="process">
+                    <p class="big l-blue center">4</p>
+                    <h4 class="bold blue center">Free Delivery</h4>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- === plan === -->
+
+        <section class="plan-container width" id="pricing">
+            <p class="l-blue bold center">Our Pricing Plan</p>
+            <h3 class="h3 blue center">The Best Price</h3>
+
+            <div class="plans d-flex justify-content-between center">
+                <div class="plan">
+                    <div class="price">
+                        <p>Basic</p>
+                        <p class="special"><sup>$</sup> <span>49</span><sub>/Mo</sub></p>
+                    </div>
+
+                    <p>First</p>
+                    <p>Second</p>
+                    <p>Third</p>
+                    <p>Fourth</p>
+
+                    <button class="l-b-btn">Signup Now</button>
+                </div>
+
+                <div class="plan">
+                    <div class="price">
+                        <p>Basic</p>
+                        <p class="special"><sup>$</sup> <span>99</span><sub>/Mo</sub></p>
+                    </div>
+
+                    <p>First</p>
+                    <p>Second</p>
+                    <p>Third</p>
+                    <p>Fourth</p>
+
+                    <button class="l-b-btn">Signup Now</button>
+                </div>
+
+                <div class="plan">
+                    <div class="price">
+                        <p>Basic</p>
+                        <p class="special"><sup>$</sup> <span>149</span><sub>/Mo</sub></p>
+                    </div>
+
+                    <p>First</p>
+                    <p>Second</p>
+                    <p>Third</p>
+                    <p>Fourth</p>
+
+                    <button class="l-b-btn">Signup Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==== testimonials ====  -->
+
+        <div class="testimonials-container">
+            <p class="l-blue center">Testimonials</p>
+            <h3 class="blue center h3">Our Clients Says</h3>
+
+            <div id="carouselExampleIndicators" class="carousel slide width" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+
+                                <div class="car-img">
+                                    <img src="./img/testimonial-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="car-text">
+                                    <p class="blue center bold">Client Name</p>
+                                    <p class="gray center">Profession</p>
+                                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                        veritatis tempora
+                                        hic aperiam eius repellendus?</p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+
+                                <div class="car-img">
+                                    <img src="./img/testimonial-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="car-text">
+                                    <p class="blue center bold">Client Name</p>
+                                    <p class="gray center">Profession</p>
+                                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                        veritatis tempora
+                                        hic aperiam eius repellendus?</p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+
+                                <div class="car-img">
+                                    <img src="./img/testimonial-3.jpg" class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="car-text">
+                                    <p class="blue center bold">Client Name</p>
+                                    <p class="gray center">Profession</p>
+                                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                        veritatis tempora
+                                        hic aperiam eius repellendus?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+
+                                <div class="car-img">
+                                    <img src="./img/testimonial-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="car-text">
+                                    <p class="blue center bold">Client Name</p>
+                                    <p class="gray center">Profession</p>
+                                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                        veritatis tempora
+                                        hic aperiam eius repellendus?</p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+
+                                <div class="car-img">
+                                    <img src="./img/testimonial-3.jpg" class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="car-text">
+                                    <p class="blue center bold">Client Name</p>
+                                    <p class="gray center">Profession</p>
+                                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                        veritatis tempora
+                                        hic aperiam eius repellendus?</p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+
+                                <div class="car-img">
+                                    <img src="./img/testimonial-4.jpg" class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="car-text">
+                                    <p class="blue center bold">Client Name</p>
+                                    <p class="gray center">Profession</p>
+                                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                        veritatis tempora
+                                        hic aperiam eius repellendus?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+        <!-- ==== blog ==== -->
+
+        <div class="blog-container width">
+            <p class="l-blue bold center">Our Blog</p>
+            <h3 class="blue h3 center">Latest From Blog</h3>
+
+            <div class="blogs d-flex ">
+                <div class="blog">
+                    <div class="blog-image">
+                        <img src="./img/blog-1.jpg" alt="">
+                        <div class="blog-overlay"></div>
+                        <div class="overlay-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam minus natus optio at velit soluta
+                        ullam et vel blanditiis expedita explicabo ipsam illum consequuntur distinctio alias aliquid
+                        debitis, dolorem incidunt!
+                    </div>
+                </div>
+
+                <div class="blog">
+                    <div class="blog-image">
+                        <img src="./img/blog-2.jpg" alt="">
+                        <div class="blog-overlay"></div>
+                        <div class="overlay-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam minus natus optio at velit soluta
+                        ullam et vel blanditiis expedita explicabo ipsam illum consequuntur distinctio alias aliquid
+                        debitis, dolorem incidunt!
+                    </div>
+                </div>
+
+                <div class="blog">
+                    <div class="blog-image">
+                        <img src="./img/blog-3.jpg" alt="">
+                        <div class="blog-overlay"></div>
+                        <div class="overlay-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam minus natus optio at velit soluta
+                        ullam et vel blanditiis expedita explicabo ipsam illum consequuntur distinctio alias aliquid
+                        debitis, dolorem incidunt!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ==== footer ==== -->
+
+        <footer class="grid-4 white" id="contact">
+            <div class="footer">
+                <h2><span class="white">DRY</span><span class="l-blue">ME</span></h2>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi cupiditate incidunt id
+                    tempora sapiente minus natus eaque</p>
+
+                <div class="social">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Get In Touch</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut delectus optio autem distinctio
+                    veritatis. Impedit?</p>
+                <p><i class="bi bi-geo-alt-fill"></i> 123 street, New York, USA</p>
+                <p><i class="bi bi-telephone-fill"></i> +12 32439823423</p>
+                <p><i class="bi bi-envelope-fill"></i> this@gmail.com</p>
+
+            </div>
+
+            <div class="footer">
+                <p>Quick Links</p>
+                <ul>
+                    <li><a href="#"><i class="bi bi-arrow-right-short"></i> Home</a></li>
+                    <li><a href="#"><i class="bi bi-arrow-right-short"></i> About Us</a></li>
+                    <li><a href="#"><i class="bi bi-arrow-right-short"></i> Services</a></li>
+                    <li><a href="#"><i class="bi bi-arrow-right-short"></i> Pricing</a></li>
+                    <li><a href="#"><i class="bi bi-arrow-right-short"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <h4>Newsletter</h4>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <button class="bot-btn">Submit Now</button>
+            </div>
+        </footer>
+
+        <div class="rights">
+            <p>All Rights Reserve. Designed by HTML Codex</p>
+        </div>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

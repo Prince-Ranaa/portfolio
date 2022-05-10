@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.black {
+    color: black;
+}
+
+.orange {
+    color: rgb(247, 138, 5);
+    display: block;
+    margin-bottom: .5em;
+}
+
+.blue {
+    color: rgb(39, 97, 255);
+}
+
+.orange-btn {
+    background-color: rgb(247, 138, 5);
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    padding: .6em 2em;
+    margin-right: 1em;
+}
+
+.blue-btn {
+    display: block;
+    background-color: rgb(39, 97, 255);
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    padding: .6em 3em;
+    margin: 0 auto;
+}
+
+
+
+/* ----- nav -----  */
+nav {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    background-color: rgb(35, 73, 60);
+}
+
+.others {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 50px 0;
+}
+
+
+.others a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 46px;
+    margin-bottom: 2rem;
+}
+
+header {
+    position: relative;
+    background: url("/images/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    z-index: -1;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    padding: .6em 2em;
+}
+
+
+
+/* ----- main container -----  */
+
+.main_container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    gap: 5em;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+
+
+.main_container p {
+    margin-bottom: 2em;
+}
+
+.main_container .text_section {
+    flex: 1;
+}
+
+.main_container .image {
+    flex: 1;
+}
+
+.main_container img {
+    width: 100%;
+}
+
+
+/* ---- about us -----  */
+
+.about_us {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: -4em auto 6em;
+    position: relative;
+}
+
+.about_us img {
+    width: 100%;
+    z-index: -2;
+}
+
+.front {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.front h2 {
+    margin: 8% 0 0;
+}
+
+.overlay_text {
+    width: 85%;
+    margin: 25% 5% 15%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .8;
+}
+
+.overlay_text p {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+
+/* ----- our Cycle ----  */
+.ourCycle {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: 6em auto;
+    position: relative;
+}
+
+.ourCycle h2 {
+    margin-bottom: 30px;
+}
+
+.ourCycle p {
+    margin-bottom: 30px;
+}
+
+.carousel img {
+    width: 100%;
+    border: 2px solid rgb(201, 186, 186);
+    box-shadow: 1px 1px 5px 1px;
+}
+
+.carousel {
+    margin-bottom: 50px;
+}
+
+
+
+/* ------ contact ------- */
+
+.contact {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto 100px;
+    padding: 0 30px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+form {
+    background: url(/images/contact-bg.png);
+    background-size: cover;
+    border: 2px solid white;
+}
+
+form input,
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding: 18px;
+}
+
+form input:nth-child(1) {
+    margin-top: 100px;
+}
+
+form input {
+    margin-bottom: 40px;
+}
+
+form textarea {
+    margin-bottom: 50px;
+}
+
+form .orange-btn {
+    display: block;
+    padding: 12px 30px;
+    margin: 0 auto 30px;
+}
+
+
+/* ------ testimonials ------  */
+
+.testimonials {
+    width: 100%;
+    padding: 0 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+}
+
+.testimonials p {
+    margin-bottom: 30px;
+}
+
+.testimonials img {
+    margin: 0 auto;
+}
+
+.testimonials .left {
+    margin: 0 0 10px;
+
+}
+
+.testimonials .right {
+    margin: -30px 0 0 96%;
+}
+
+
+/* ---- footer ------  */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background-color: rgb(11, 11, 68);
+    color: white;
+    gap: 30px;
+    margin: 100px 0 20px 0;
+}
+
+.part {
+    width: 100%;
+}
+
+.part h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.part ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.part a {
+    color: white;
+    text-decoration: none;
+}
+
+.part a:hover {
+    letter-spacing: 2px;
+    transition: .3s;
+    color: red;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe input {
+    border: none;
+    width: 200px;
+    font-size: 16px;
+    padding: 12px 18px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.subscribe input:focus {
+    outline: none;
+}
+
+.subscribe button {
+    padding: 12px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 30px 0;
+    font-size: 16px;
+
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width:950px) {
+    .search {
+        display: none;
+    }
+
+    .main_container .image {
+        display: none;
+    }
+
+    .main_container {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        margin: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .main_container .text_section {
+        width: 50%;
+        float: right;
+    }
+
+
+
+    /* ------ about us -----  */
+
+
+    .overlay_text {
+        width: 85%;
+        margin: 20% 5% 5%;
+        position: relative;
+    }
+
+
+
+    /* --- footer ----  */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 20px;
+        background-color: rgb(11, 11, 68);
+        color: white;
+        gap: 10px;
+        margin: 100px 0 20px 0;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:780px) {
+    .orange-btn {
+        background-color: rgb(247, 138, 5);
+        color: white;
+        border: none;
+        font-size: 1em;
+        padding: .6em 2em;
+        margin-right: 1em;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 1em;
+        padding: .6em 2em;
+    }
+
+
+    /* ------ nav ------  */
+    .others a,
+    .cart {
+        display: none;
+    }
+
+    /* ---- about us ------  */
+
+    .overlay_text {
+        width: 85%;
+        margin: 10% 5% 5%;
+        position: relative;
+    }
+
+
+
+    /* ---- footer ----  */
+    .part h3 {
+        font-size: 18px;
+    }
+
+    .part a {
+        font-size: 14px;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    .subscribe input {
+        width: 150px;
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    .subscribe input:focus {
+        outline: none;
+    }
+
+    .subscribe button {
+        padding: 8px 5px;
+        margin: 30px 0;
+        font-size: 14px;
+
+    }
+}
+
+
+@media screen and (max-width:660px) {
+
+    nav .logo {
+        width: 100px;
+    }
+
+    nav .logo img {
+        width: 100%;
+    }
+
+    .others img {
+        width: 30px;
+        padding: 0;
+    }
+
+    .others {
+        margin: 0 10px;
+    }
+
+    .main_container .text_section {
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        margin: 0;
+        max-width: 100%;
+        padding: 0 10px 0 50px;
+    }
+
+    .text_section span {
+        display: inline;
+    }
+
+    .blue-btn {
+        font-size: 14px;
+
+    }
+
+
+    /* --- about us ---  */
+    .front {
+        position: relative;
+    }
+
+    .front h2 {
+        margin: 0;
+    }
+
+    .overlay_text {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: .8;
+    }
+
+    .overlay_text p {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+    }
+
+
+    /* ---- contact us ------  */
+    form input,
+    textarea {
+        display: block;
+        margin: 0 auto;
+        width: 98%;
+        padding: 5px;
+    }
+
+    form input:nth-child(1) {
+        margin-top: 100px;
+    }
+
+    form input {
+        margin-bottom: 10px;
+    }
+
+    form textarea {
+        margin-bottom: 10px;
+    }
+
+    form .orange-btn {
+        display: block;
+        padding: 8px 16px;
+        margin: 0 auto 30px;
+        font-size: 14px;
+    }
+
+
+    .orange-btn {
+        background-color: rgb(247, 138, 5);
+        color: white;
+        border: none;
+        font-size: 1em;
+        padding: .3em 1em;
+        margin-right: 1em;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 1em;
+        padding: .3em 1em;
+    }
+
+
+
+
+    /* --- footer ----  */
+
+    footer .imp-link {
+        display: none;
+    }
+
+}

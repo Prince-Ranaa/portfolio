@@ -1,0 +1,997 @@
+:root {
+    --blueish: rgb(32, 44, 69);
+    --red: rgb(232, 28, 46);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+}
+
+
+.red-btn {
+    background-color: var(--red);
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 50px;
+}
+
+hr {
+    width: 60px;
+    background-color: var(--red);
+    opacity: 1;
+    padding: 1.3px;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.red {
+    color: var(--red);
+}
+
+h1 {
+    font-weight: 900;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 68px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.h4 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--blueish);
+    margin: 20px 0 40px;
+}
+
+/* == header == */
+
+header {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header h3 {
+    font-size: 18px;
+    color: var(--blueish);
+}
+
+header p {
+    font-size: 14px;
+}
+
+.part {
+    gap: 50px;
+    align-items: center;
+}
+
+
+.details {
+    align-items: center;
+}
+
+.details .icon {
+    background-color: var(--blueish);
+    color: white;
+    padding: 10px 14px;
+    margin: -10px 16px 0 0;
+    border-radius: 50px;
+}
+
+/* ==== nav ==== */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--blueish);
+    padding: 30px;
+}
+
+
+
+.nav-link {
+    font-weight: 500;
+    color: white;
+}
+
+.active {
+    color: var(--red);
+}
+
+nav ul {
+    margin-top: 5px;
+}
+
+.nav-link:hover {
+    color: var(--red);
+}
+
+nav button {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 32px;
+}
+
+nav button:hover {
+    background-color: var(--red);
+    color: white;
+    transition: .3s;
+}
+
+
+/* ==== carousel ==== */
+.mycarousel {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .6;
+}
+
+.carousel-item .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+/* === about us === */
+
+.about {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    gap: 30px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about hr {
+    margin: -8px 0;
+}
+
+.about .image img {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.about .image {
+    flex: 1;
+}
+
+.about .text {
+    flex: 1;
+}
+
+
+
+/* ==== what we do ==== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.whatWeDo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    align-items: center;
+    overflow: hidden;
+}
+
+.whatWeDo hr {
+    margin-bottom: 20px;
+}
+
+.item .icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+/* === counter === */
+
+.counter-container {
+    background-color: var(--blueish);
+    color: white;
+    padding: 180px 0;
+}
+
+.counter-container p {
+    color: white;
+    margin-bottom: 0;
+}
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.counter .part {
+    display: flex;
+    gap: 20px;
+}
+
+.counter .part .img i {
+    font-size: 40px;
+}
+
+
+.counter .text .count {
+    color: white;
+}
+
+.plus {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/* === Washing Plan === */
+.washingPlan {
+    margin: 100px auto;
+}
+
+.plans {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.plan {
+    padding: 50px 80px;
+    background-color: rgb(249, 255, 255);
+}
+
+
+.plan ul {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.plan ul li {
+    margin: 0 auto 14px -20%;
+}
+
+.plan:hover {
+    box-shadow: 0px 0px 5px 2px rgb(101, 130, 136);
+    transition: .4s;
+    background-color: rgb(245, 254, 254);
+    transform: scale(1.01);
+}
+
+
+/* === washing points === */
+.washingPoints {
+    display: flex;
+    gap: 100px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 100px;
+    justify-content: space-evenly;
+}
+
+.washingPoints .text {
+    flex: 1;
+}
+
+.washingPoints .text hr {
+    margin: 0;
+    width: 80px;
+}
+
+.washingPoints .text h4 {
+    padding: 30px 0;
+}
+
+.washingPoints .text h4 {
+    margin: 0;
+}
+
+.points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.point {
+    display: flex;
+}
+
+.point i {
+    font-size: 30px;
+}
+
+form {
+    flex: .7;
+}
+
+form {
+    background-color: var(--red);
+    padding: 30px;
+    color: white;
+}
+
+form input,
+textarea {
+    display: block;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+form input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+form button {
+    width: 100%;
+    border: none;
+    background-color: white;
+    color: var(--red);
+    padding: 12px;
+    border-radius: 50px;
+}
+
+
+/* === our team === */
+
+.ourTeam {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 100px;
+    text-align: center;
+    color: white;
+}
+
+.team p {
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.team {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.social {
+    margin: -15px auto 30px;
+
+}
+
+.social i {
+    font-size: 20px;
+    padding: 10px 12px;
+    background-color: var(--blueish);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: var(--blueish);
+}
+
+.team:hover .details,
+.team:hover .social i {
+    background-color: var(--red);
+    transition: .3s;
+}
+
+
+.team .details {
+    background-color: var(--blueish);
+}
+
+.team img {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* === testimonials === */
+
+.cards-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 100px;
+    gap: 30px;
+}
+
+.test-card {
+    padding: 20px;
+    display: flex;
+    background-color: rgb(213, 213, 213);
+    border-radius: 10px;
+}
+
+.test-card .image img {
+    width: 60px;
+    border-radius: 50px;
+    margin-right: 20px
+}
+
+
+/* === blog === */
+
+.blog-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 100px;
+}
+
+.blogs {
+    display: flex;
+    gap: 30px;
+}
+
+.blog {
+    border: 1px solid gray;
+}
+
+
+.blog .image {
+    position: relative;
+}
+
+.blog .image img {
+    width: 100%;
+    display: block;
+}
+
+.blog .image .blog-overlay {
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .4s ease-in-out 0s;
+}
+
+.blog .image .text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+}
+
+.blog:hover .image .blog-overlay {
+    opacity: .5;
+    transition: all .4s ease-in-out 0s;
+}
+
+.blog:hover .image .text {
+    top: 50%;
+    left: 50%;
+    transition: all .4s ease-in-out 0s;
+    opacity: 1;
+}
+
+
+/* === footer === */
+
+footer {
+    background-color: var(--blueish);
+    padding: 100px 0 50px 0;
+}
+
+footer .contain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.fPart {
+    flex-shrink: 1;
+}
+
+
+footer h3 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: var(--red);
+    transition: .3s;
+    letter-spacing: 2px;
+}
+
+.contain .social {
+    margin-top: 30px;
+}
+
+.contain .social i {
+    background-color: white;
+    color: var(--blueish);
+}
+
+
+.contain .social i:hover {
+    background-color: var(--red);
+    color: white;
+    transition: .3s;
+}
+
+.flex2 {
+    flex-shrink: 20;
+}
+
+.fPart input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 30px;
+    background-color: inherit;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.fPart button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 30px;
+    background-color: inherit;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.fPart button {
+    background-color: white;
+    border-radius: 50px;
+    color: var(--blueish);
+    font-weight: 700;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.red-btn:hover {
+    background-color: var(--blueish);
+    color: var(--red);
+    transition: .3s;
+}
+
+.white-btn:hover {
+    background-color: var(--blueish);
+    color: white;
+    transition: .3s;
+}
+
+.white-btn2:hover {
+    background-color: var(--red);
+    color: white;
+    transition: .3s;
+}
+
+.menu,
+.menu-btn {
+    display: none;
+}
+
+
+@media screen and (max-width:980px) {
+    h1 {
+        display: inline-block;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    header .d-flex {
+        display: none !important;
+    }
+
+
+    /* === nav === */
+    nav {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .menu-btn {
+        display: block;
+        border: 1px solid gray;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .menu-btn i {
+        display: block;
+        color: white;
+        font-size: 40px;
+        line-height: 0;
+        padding: 3px 10px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .nav {
+        position: absolute;
+        background-color: var(--blueish);
+        display: block;
+        top: 90%;
+        left: 0;
+        z-index: 3;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: .3s;
+    }
+
+
+    /* === carousel === */
+    .mycarousel {
+        width: 100%;
+    }
+
+    .mycarousel h2 {
+        font-size: 48px;
+    }
+
+    /* === about us === */
+
+    .about {
+        display: block;
+        max-width: 650px;
+        width: 100%;
+    }
+
+    .about .text {
+        margin-top: 50px;
+    }
+
+
+    /* === what we do === */
+
+    .whatWeDo .grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* === counter === */
+    .counter-container {
+        padding: 100px 0;
+    }
+
+    .counter {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 650px;
+        width: 100%;
+        gap: 50px;
+    }
+
+
+    /* === plan === */
+
+    .plans {
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .plan {
+        padding: 10px;
+    }
+
+    .plan ul li {
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    /* === washing points === */
+
+    .washingPoints {
+        display: block;
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .washingPoints .text {
+        margin-bottom: 30px;
+    }
+
+    .washingPoints form {
+        margin-bottom: 100px;
+    }
+
+    /* === our team === */
+
+    .teams {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* === testimonials === */
+
+    .testimonials {
+        display: none;
+    }
+
+    /* === blog === */
+
+    .blogs {
+        display: block;
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .blog {
+        margin-bottom: 50px;
+    }
+
+
+    /* === footer === */
+
+    footer .contain {
+        max-width: 650px;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    /* === carousel === */
+    .mycarousel {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mycarousel h2 {
+        font-size: 24px;
+        width: 600px;
+    }
+
+    .mycarousel p {
+        width: 500px;
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 0 30px 30px;
+    }
+
+    .red-btn {
+        padding: 5px 10px;
+    }
+
+    /* === about us === */
+
+    .about {
+        display: block;
+        max-width: 650px;
+        width: 94%;
+    }
+
+    .about .text {
+        margin-top: 50px;
+    }
+
+
+    /* === What we do === */
+
+    .whatWeDo .grid {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+
+    /* === counter === */
+
+    .counter {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+        width: 94%;
+        gap: 50px;
+    }
+
+    .counter .part {
+        margin: 0 auto;
+    }
+
+    /* === plan === */
+
+
+    .plans {
+        display: block;
+        max-width: 650px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .plan {
+        padding: 40px;
+        margin-bottom: 50px;
+    }
+
+    .plan ul li {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* === washing points === */
+
+    .washingPoints {
+        width: 94%;
+    }
+
+    .points i {
+        margin-right: 20px;
+    }
+
+    .points {
+        display: block;
+    }
+
+    /* === our team === */
+
+    .teams {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    /* === blog === */
+
+    .blogs {
+        display: block;
+        max-width: 650px;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .blog {
+        margin-bottom: 50px;
+    }
+
+
+    /* === footer === */
+
+    footer .contain {
+        max-width: 650px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .carousel-item .text {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 1;
+        color: white;
+        text-align: center;
+    }
+
+    .carousel-item button {
+        padding: 3px 8px;
+        margin-top: 5px;
+        font-size: 12px;
+
+    }
+
+    .carousel-item h4 {
+        font-size: 24px;
+        margin-top: 0px;
+    }
+
+    .carousel-item p {
+        max-width: 350px;
+        padding: 0 20px;
+    }
+}
+
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: var(--red);
+    color: white;
+    padding: 5px 9px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.top p {
+    font-size: 10px;
+}
